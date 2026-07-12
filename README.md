@@ -1,5 +1,6 @@
 # Implement Cucumber in Cypress 
 
+
 ## 1. Initialize node project and install cypress 
 
 ```
@@ -53,6 +54,7 @@ module.exports = defineConfig({
 
 This is one of the bests for VS-Code: [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
 
+## 6. Tags
 ## 6. Tags
 
 ```gherkin
