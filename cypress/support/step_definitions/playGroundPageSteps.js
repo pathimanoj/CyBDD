@@ -33,11 +33,3 @@ Then(/I should( not)? see the "(.*)" (radio button|toggle|checkbox)/,
 Then(/the validate text with id "(.*)" should have text "(.*)"/, (id, text) => {
   cy.get(`#${id}`).should('have.text', text)
 })
-
-When("I select multiple skills", (datatable) => {
-  datatable.raw().forEach(item => { // datatable.raw() = [['python', 'check_python'], ['javadcript', 'check_javascript']]
-    cy.log(item)
-    cy.get(`input[name=${item[0]}]`).check()
-    cy.get(`#${item[1]}`).should('be.checked')
-  })
-})

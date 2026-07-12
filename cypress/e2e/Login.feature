@@ -1,5 +1,6 @@
 Feature: Login features
 
+ @regression
   Scenario: Verify valid login 
     Given I am in login page
     # When I enter valid username and password
@@ -9,6 +10,8 @@ Feature: Login features
     And I click on login button
     Then I should logged in and redirected to dashboard page
   
+  @smoke
+  Scenario: Verify valid login with data table
   Scenario: Verify invalid login
     Given I am in login page
     When I enter invalid username and password
